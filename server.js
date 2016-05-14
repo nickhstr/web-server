@@ -1,10 +1,8 @@
-'use strict';
+var express = require('express');
+var app = express();
+var PORT = process.env.PORT || 3000;
 
-let express = require('express');
-let app = express();
-let PORT = process.env.PORT || 3000;
-
-let middleware = require('./middleware');
+var middleware = require('./middleware');
 
 app.use(middleware.logger);
 
