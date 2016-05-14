@@ -14,6 +14,6 @@ app.get('/about', middleware.requireAuthentication, function(req, res) {
 	res.send('About Nick the Badass');
 });
 
-app.listen(3000, function() {
+app.listen(PORT, function() {
 	console.log('Express server started on port ' + PORT + '!');
 });
